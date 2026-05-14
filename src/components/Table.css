@@ -1,0 +1,75 @@
+.mystic-table {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-mat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(60deg);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(42, 27, 56, 0.4) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  border: 1px dashed rgba(212, 175, 55, 0.2);
+}
+
+.rune-circle {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  border: 2px solid rgba(0, 229, 255, 0.1);
+  border-radius: 50%;
+  animation: spin 120s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.spread-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.cards-layout {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  perspective: 1000px;
+}
+
+.card-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.slot-label {
+  font-family: var(--font-heading);
+  color: var(--celestial-gold);
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px var(--celestial-gold-glow);
+}
+
+@media (max-width: 900px) {
+  .cards-layout {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
