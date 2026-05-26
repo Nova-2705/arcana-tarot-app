@@ -5,7 +5,7 @@
 ![Canvas API](https://img.shields.io/badge/HTML5_Canvas-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-> A fully interactive, state-managed React SPA featuring a 78-card tarot deck, procedural Canvas rendering, and a responsive celestial UI.
+> A fully interactive, state-managed React SPA featuring a 78-card tarot deck, procedural Canvas rendering, and a responsive celestial UI for a mystical experience.
 
 ---
 
