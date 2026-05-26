@@ -1,6 +1,19 @@
-# 🌌 Arcana Tarot App
+# 🌙 Arcana — Interactive Tarot Card Reader
 
-An immersive, premium, and highly interactive digital tarot reading experience. Styled with a mystic aesthetic, smooth CSS transitions, interactive stars, and custom particle cursor trails, Arcana invites you to discover the whispers of the cosmos.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=white)
+![Canvas API](https://img.shields.io/badge/HTML5_Canvas-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+> A fully interactive, state-managed React SPA featuring a 78-card tarot deck, procedural Canvas rendering, and a responsive celestial UI.
+
+---
+
+## 🎬 Live Preview
+
+![alt text](shuffle.gif)
+
+**[Live Demo](https://cosmic-whispers.netlify.app/)**
 
 ---
 
@@ -15,6 +28,15 @@ An immersive, premium, and highly interactive digital tarot reading experience. 
 
 ---
 
+## ⚙️ Architecture & Technical Logic
+
+- **State Management**: Implemented a finite state machine (`home → shuffling → reading → revealed`) to manage multi-phase user flows across deck, card spread, and detail panel components.
+- **Procedural Graphics**: Engineered real-time visual effects—including a proximity-reactive 300-star parallax background and particle-emitting cursor trails—using pure HTML5 Canvas `requestAnimationFrame` loops.
+- **Modern UI/UX**: Designed a responsive, dark-themed design system featuring CSS variables, fluid `clamp()` typography, glassmorphism panels, and 3D card-flip transforms.
+- **Data Pipeline**: Integrated a custom Python data pipeline to fetch and structure Rider-Waite-Smith artwork and descriptive metadata into a localized JSON dataset.
+
+---
+
 ## 🛠️ Technology Stack
 
 - **Framework**: [React](https://react.dev/) + [Vite](https://vite.dev/) (Ultra-fast development server and building)
@@ -24,76 +46,17 @@ An immersive, premium, and highly interactive digital tarot reading experience. 
 
 ---
 
-## 📂 Project Structure
+## 🚀 Local Installation
 
-```text
-TarotReader/
-├── public/                 # Static assets (favicons, icons)
-├── src/
-│   ├── assets/            # Project-wide visual assets
-│   ├── components/        # Reusable React components
-│   │   ├── Card.jsx       # Card rendering, flipping, and interactions
-│   │   ├── Deck.jsx       # Deck layouts and card distribution
-│   │   ├── Table.jsx      # Reading table coordinating shuffling/reveal
-│   │   ├── ReadingPanel.jsx # Sidebar showing details of the selected card
-│   │   ├── StarBackground.jsx # Custom canvas particle star field
-│   │   └── CursorTrail.jsx # Custom canvas particle cursor effects
-│   ├── data/
-│   │   └── tarot.json     # Card meanings, descriptions, and metadata
-│   ├── App.jsx            # Main app entry layout and mystic frame structure
-│   ├── index.css          # Main design system variables & reset styles
-│   └── main.jsx           # React app mount script
-├── vite.config.js         # Vite bundler configuration
-└── package.json           # Project dependencies & scripts
-```
-
----
-
-## 🚀 Getting Started
-
-Follow these steps to run the application locally on your machine:
-
-### 1. Prerequisites
-
-Ensure you have [Node.js](https://nodejs.org/) installed (v18+ recommended).
-
-### 2. Installation
-
-Clone the repository and install the project dependencies:
-
-```bash
-# Clone the repository
-git clone https://github.com/Nova-2705/arcana-tarot-app.git
-
-# Navigate into the project folder
-cd arcana-tarot-app
-
-# Install dependencies
-npm install
-```
-
-### 3. Running Locally
-
-Start the Vite development server:
-
-```bash
-npm run dev
-```
-
-Open your browser and navigate to the address shown in your terminal (typically `http://localhost:5173`) to experience Arcana.
-
-### 4. Build for Production
-
-Compile and optimize the project for production deployment:
-
-```bash
-npm run build
-```
-
-The output will be generated in the `dist` directory, ready to be hosted on any static hosting provider.
-
----
-
-## 🌌 License
-
-This project is licensed under the MIT License - feel free to customize and expand it as you see fit!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Nova-2705/arcana-tarot-app.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
